@@ -10,7 +10,7 @@ class Dog
 
   def create_table
     sql <<-SQL
-      CREATE TABLE if NOT EXISTS students(
+      CREATE TABLE if NOT EXISTS dogs(
         id PRIMARY KEY,
         name TEXT,
         breed TEXT
