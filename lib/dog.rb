@@ -8,15 +8,15 @@ class Dog
     @id = id
   end
 
-  def create_table 
-    sql <<-SQL 
+  def create_table
+    sql <<-SQL
       CREATE TABLE if NOT EXISTS students(
         id PRIMARY KEY,
         name TEXT,
-        breed TEXT        
+        breed TEXT
       )
     SQL
     DB[:conn].execute(sql)
-  end 
+  end
 
 end
